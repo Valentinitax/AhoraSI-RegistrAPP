@@ -47,6 +47,9 @@ export class LoginPage implements OnInit {
         message: 'Usuario o contraseña incorrecta',
         buttons: ['Aceptar']
       })
+      
+      await alert.present();
+      return;
     }
   }
 
